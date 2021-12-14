@@ -32,7 +32,7 @@
   margin-top: -60px;
   position: absolute;
   z-index: 1;
-  animation: wave 3s linear, left_hand_move 1s 3s linear infinite;
+  animation: wave 2s 10s linear, left_hand_move 1s 12s linear infinite;
   transform-origin: top right;
 }
 @keyframes wave {
@@ -40,11 +40,11 @@
     transform: rotateZ(0deg);
   }
 
-  45% {
+  75% {
     transform: rotateZ(55deg);
   }
 
-  55% {
+  95% {
     transform: rotateZ(-40deg) rotateX(180deg);
   }
   100% {
