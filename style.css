@@ -1,0 +1,175 @@
+.head{
+    margin-left: 730px;
+    margin-top: 30px;
+    position: fixed;
+    animation: headmove 2s linear infinite;
+}
+
+@keyframes headmove{
+    100%{
+        transform: translateX(10px);
+      
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+   
+   
+    
+}
+.body{
+    
+ margin-left: 810px;
+ position: absolute;
+ margin-top: 270px;
+    position: fixed;
+    animation: bodymove 2s linear infinite;
+
+}
+
+@keyframes bodymove{
+    100%{
+        transform: translateX(10px);
+        transform: translateY(10px);
+      
+    }
+}
+.left_hand{
+margin-left: 730px;
+margin-top:-60px;
+position: absolute;
+z-index: 1;
+
+
+animation: wave 12s linear infinite; 
+transform-origin: top ;
+
+   
+
+
+
+}
+@keyframes wave{
+    /* 50%{
+        transform: rotateX(200deg);
+
+    }
+    90%{
+      transition-delay: 2s;
+      transform: rotateY(45deg);
+      
+    } */
+    
+    50%{
+        transform: translateY(0px) rotateZ(-0deg);
+    }
+    100%{
+        transform: translateX(-10px) rotateZ(10deg);
+    }  
+}
+.right_hand{
+    margin-left: 985px;
+    margin-top: 220px;
+    animation: hand 3s linear infinite; 
+
+   
+}
+
+
+ @keyframes hand{
+    0%{
+       transform: translateX(-7px) rotateZ(9deg);
+   }
+   50%{
+       transform: translateY(0px) rotateZ(-0deg);
+   }
+   100%{
+       transform: translateX(-10px) rotateZ(10deg);
+   }  
+  
+}   
+
+ .body1{
+    margin-left: 830px;
+    margin-top:-40px;
+    position: fixed;
+    z-index: -1;
+    animation: bodymove 2s linear infinite;
+}
+ .left_leg{
+    margin-left: 790px;
+    margin-top:60px;
+    position: absolute;
+    z-index: -5;
+    animation: legmove 2s linear infinite;
+}  
+.right_leg{
+    margin-left: 930px;
+    position: absolute;
+    margin-top: 60px;
+    z-index: -2;
+    animation: shake 2s linear infinite;
+    transform-origin: top;
+
+}
+
+@keyframes shake{
+    100%{
+        transform: rotateX(45deg);
+    }
+}
+@keyframes legmove{
+    100%{
+        transform: translateX(5px);
+      
+    }
+    50%{
+        transform: translateY(5px);
+    }
+}
+
+.text{
+    position: relative;
+     margin-left:600px;
+    margin-top: -380px; 
+     border: 1px solid black; 
+  width:100px;
+    padding:15px 30px;
+     height:50px; 
+    border-radius: 20px;
+    
+    animation: bubble 2s linear infinite;
+    opacity:0;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.text:before{
+    content: '';
+    
+    position:absolute;
+    
+ 
+    width:0;
+    height:0;
+    border: 30px solid transparent;
+    
+  
+    top: 80px;
+   
+    border-top-color: black;
+    
+    
+    
+    
+    
+
+}
+
+@keyframes bubble{
+    100%{
+opacity:1;
+    }
+}  
+ 
